@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.header {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    padding: 20px 0;
+    animation: baseline 1.8s ease-out forwards;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo img {
+    border-radius: 10px;
+    width: 200px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links a:hover{
+    color: rgb(0, 255, 217);
+}
+@keyframes rise {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns text and button to the left */
+    padding-left: 300px; /* Adjust this value as necessary */
+}
+
+.hero-text h2 {
+    color: #fff;
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: white;
+    color: #2a6ef2;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 25px;
+    margin-top: 20px; /* This will create space between the button and the text */
+}
+.hero-image img {
+    max-width: 550px;
+    
+}
+
+.company-story {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 170px;
+    background-color: #fff;
+    text-align: left;
+    animation: rise 1.5s ease-out forwards; /* Rise animation */
+}
+
+.story-content {
+    max-width: 500px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #0072ff; /* Match the blue color */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #0072ff;
+    line-height: 1.6;
+}
+
+.team-images {
+    display: flex;
+    gap: 20px;
+}
+
+.team-images img {
+    width: 200px; /* Adjust the size as necessary */
+    border-radius: 10px;
+}
+
+/* Rise animation */
+@keyframes rise {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.services {
+    background-color: #0072ff;
+    color: rgb(0, 0, 0);
+    padding: 280px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.services h2 {
+    margin-top: 10px;
+    color: #f4f4f4;
+    font-size: 32px;
+    
+}
+
+.services-container {
+    display: flex;
+    margin-bottom: 0px;
+    justify-content: center;
+    gap: 200px; /*space item img */
+}
+
+.service-item {
+    text-align: bottom;
+
+}
+
+.service-item img {
+    max-width: 80px;
+}
+
+.service-item h3 {
+    margin-top: 50px;
+    font-size: 20px;
+}
